@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | MMRE Ventures</title>
+  <meta name="description" content="Insights, news, and thought leadership from the MMRE team.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MMRE</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="invest.html" class="nav-cta">Invest With Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Insights & <span class="gradient-text">News</span></h1>
+    <p>Perspectives on technology, markets, and the future of venture capital from the MMRE team.</p>
+  </header>
+
+  <!-- Blog Grid -->
+  <section class="section">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All Posts</button>
+      <button class="filter-tab" data-filter="thesis">Investment Thesis</button>
+      <button class="filter-tab" data-filter="market">Market Analysis</button>
+      <button class="filter-tab" data-filter="news">Firm News</button>
+    </div>
+
+    <div class="card-grid" id="blog-grid">
+
+      <!-- Featured Post -->
+      <div class="blog-card" data-category="thesis" style="grid-column: 1 / -1;">
+        <div class="blog-card-image" style="height: 280px; background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.15)); font-size: 4rem;">&#9889;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>February 28, 2026</span>
+            <span>&middot;</span>
+            <span>Investment Thesis</span>
+            <span>&middot;</span>
+            <span>8 min read</span>
+          </div>
+          <h3 style="font-size: 1.4rem;">Why We Believe Enterprise AI Is Still in Its First Inning</h3>
+          <p>Despite the hype cycle, we see enterprise AI adoption at less than 5% of its potential. Here's our thesis on where the real opportunities lie &mdash; and why the next wave will be bigger than the first.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="market">
+        <div class="blog-card-image">&#128200;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>February 15, 2026</span>
+            <span>&middot;</span>
+            <span>Market Analysis</span>
+          </div>
+          <h3>The State of Fintech in 2026: Infrastructure Wins</h3>
+          <p>Consumer fintech is maturing, but the infrastructure layer is just heating up. We break down the three categories capturing the most value.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="news">
+        <div class="blog-card-image">&#127881;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>February 5, 2026</span>
+            <span>&middot;</span>
+            <span>Firm News</span>
+          </div>
+          <h3>MMRE Closes Fund III at $120M</h3>
+          <p>We're thrilled to announce the close of Fund III, our largest fund to date, focused on AI, climate tech, and developer infrastructure.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="thesis">
+        <div class="blog-card-image">&#127793;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>January 20, 2026</span>
+            <span>&middot;</span>
+            <span>Investment Thesis</span>
+          </div>
+          <h3>Climate Tech's Trillion-Dollar Decade</h3>
+          <p>Regulation, technology, and consumer demand are converging. Here's why we're doubling our allocation to climate and sustainability.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="market">
+        <div class="blog-card-image">&#128161;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>January 8, 2026</span>
+            <span>&middot;</span>
+            <span>Market Analysis</span>
+          </div>
+          <h3>What We Learned From 40 Portfolio Reviews in 2025</h3>
+          <p>Every year we deep-dive our entire portfolio. These are the five patterns that separated the outperformers from the rest.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="news">
+        <div class="blog-card-image">&#128640;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>December 18, 2025</span>
+            <span>&middot;</span>
+            <span>Firm News</span>
+          </div>
+          <h3>NexaFlow Raises $45M Series B Led by MMRE</h3>
+          <p>Our portfolio company NexaFlow closed a landmark Series B to accelerate their AI workflow platform across new enterprise verticals.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="thesis">
+        <div class="blog-card-image">&#128296;</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span>December 2, 2025</span>
+            <span>&middot;</span>
+            <span>Investment Thesis</span>
+          </div>
+          <h3>The Developer Tools Renaissance</h3>
+          <p>AI-native dev tools are creating a step-change in productivity. We explore the categories we're most excited about investing in.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="cta-section">
+    <div class="cta-content fade-in">
+      <h2>Stay in the <span class="gradient-text">Loop</span></h2>
+      <p>Get our latest insights and portfolio updates delivered to your inbox. No spam, just signal.</p>
+      <div style="max-width: 440px; margin: 0 auto; display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+        <input type="email" placeholder="you@email.com" style="flex: 1; min-width: 200px; padding: 0.75rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text-primary); font-size: 0.9375rem; font-family: inherit;">
+        <button class="btn btn-primary" onclick="alert('Thanks for subscribing!')">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">MMRE</a>
+        <p>Backing the boldest founders building transformative technology companies from seed to scale.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="invest.html">Invest With Us</a></li>
+          <li><a href="mailto:info@mmre.vc">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclosures</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MMRE. All rights reserved.</span>
+      <span>Built with conviction.</span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Blog filter
+    document.querySelector('.filter-tabs').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-tab')) return;
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      e.target.classList.add('active');
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll('.blog-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+          card.style.opacity = '0';
+          requestAnimationFrame(() => {
+            card.style.transition = 'opacity 0.3s ease';
+            card.style.opacity = '1';
+          });
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

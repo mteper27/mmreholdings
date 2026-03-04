@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest With Us | MMRE Ventures</title>
+  <meta name="description" content="Inquire about investing with MMRE. Partner with us to access exceptional venture capital returns.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MMRE</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="invest.html" class="nav-cta active">Invest With Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Invest With <span class="gradient-text">MMRE</span></h1>
+    <p>Join a network of strategic investors backing the next generation of transformative technology companies.</p>
+  </header>
+
+  <!-- Why Invest Section -->
+  <section class="section fade-in">
+    <div class="section-header">
+      <p class="section-label">Why MMRE</p>
+      <h2 class="section-title">The MMRE Advantage</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">&#128200;</div>
+        <h3>Proven Track Record</h3>
+        <p>3.2x average return multiple across our fund portfolio with 12 successful exits and counting.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128269;</div>
+        <h3>Rigorous Diligence</h3>
+        <p>We evaluate 2,000+ companies annually and invest in fewer than 1%. Every investment is deeply researched and high-conviction.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128101;</div>
+        <h3>Active Partnership</h3>
+        <p>We don't just invest &mdash; we roll up our sleeves. Our team provides hands-on operational support to drive portfolio value.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127760;</div>
+        <h3>Global Network</h3>
+        <p>Access to our 500+ LP network, Fortune 500 partnerships, and deep connections across Silicon Valley and beyond.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128202;</div>
+        <h3>Transparent Reporting</h3>
+        <p>Quarterly portfolio updates, annual meetings, and real-time dashboards so you always know how your capital is performing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128737;</div>
+        <h3>Aligned Incentives</h3>
+        <p>Our team invests significant personal capital alongside our LPs. We succeed only when you succeed.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Investment Process -->
+  <section class="section fade-in">
+    <div class="section-header">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-desc">From initial inquiry to committed partner in four straightforward steps.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">1</div>
+        <div class="timeline-content">
+          <h3>Submit Inquiry</h3>
+          <p>Fill out the form below with your details and investment interests. Our team reviews every submission personally.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">2</div>
+        <div class="timeline-content">
+          <h3>Introduction Call</h3>
+          <p>We'll schedule a 30-minute call to discuss your investment goals, risk profile, and how MMRE aligns with your portfolio.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">3</div>
+        <div class="timeline-content">
+          <h3>Due Diligence</h3>
+          <p>Access our data room with full fund documentation, track record, portfolio details, and legal agreements for review.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">4</div>
+        <div class="timeline-content">
+          <h3>Commit & Partner</h3>
+          <p>Finalize your commitment and join the MMRE investor community. Welcome to the portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Inquiry Form -->
+  <section class="section fade-in">
+    <div class="section-header">
+      <p class="section-label">Get Started</p>
+      <h2 class="section-title">Investor Inquiry</h2>
+      <p class="section-desc">Tell us about yourself and your investment interests. We'll be in touch within 2 business days.</p>
+    </div>
+    <div class="form-container">
+      <form id="invest-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="John">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="company">Company / Organization</label>
+          <input type="text" id="company" name="company" placeholder="Your company or family office">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="investorType">Investor Type *</label>
+            <select id="investorType" name="investorType" required>
+              <option value="" disabled selected>Select type</option>
+              <option value="individual">Individual / Angel</option>
+              <option value="family-office">Family Office</option>
+              <option value="institutional">Institutional Investor</option>
+              <option value="fund-of-funds">Fund of Funds</option>
+              <option value="corporate">Corporate / Strategic</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="investmentRange">Investment Range *</label>
+            <select id="investmentRange" name="investmentRange" required>
+              <option value="" disabled selected>Select range</option>
+              <option value="100k-250k">$100K &ndash; $250K</option>
+              <option value="250k-500k">$250K &ndash; $500K</option>
+              <option value="500k-1m">$500K &ndash; $1M</option>
+              <option value="1m-5m">$1M &ndash; $5M</option>
+              <option value="5m+">$5M+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interests">Areas of Interest</label>
+          <select id="interests" name="interests">
+            <option value="" disabled selected>Select focus area</option>
+            <option value="all">All Sectors</option>
+            <option value="ai">Enterprise AI</option>
+            <option value="fintech">Fintech & Digital Assets</option>
+            <option value="climate">Climate & Sustainability</option>
+            <option value="health">Health & Biotech</option>
+            <option value="devtools">Developer Infrastructure</option>
+            <option value="deeptech">Deep Tech</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Information</label>
+          <textarea id="message" name="message" placeholder="Tell us about your investment experience, goals, or any questions you have..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
+            <input type="checkbox" required style="margin-top: 4px; accent-color: var(--accent);">
+            <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 400;">
+              I confirm that I am an accredited investor and understand that this inquiry does not constitute a commitment to invest. All investments involve risk, including loss of principal.
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Submit Inquiry &rarr;</button>
+      </form>
+
+      <!-- Success State -->
+      <div id="form-success" style="display: none; text-align: center; padding: 3rem 1rem;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">&#9989;</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Inquiry Received</h3>
+        <p style="color: var(--text-secondary);">Thank you for your interest in MMRE. Our team will review your inquiry and reach out within 2 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Alternative -->
+  <section class="section fade-in" style="padding-top: 2rem;">
+    <div style="text-align: center;">
+      <p style="color: var(--text-secondary); font-size: 0.95rem;">
+        Prefer to reach out directly? Email us at
+        <a href="mailto:invest@mmre.vc" style="color: var(--accent-light); text-decoration: none; font-weight: 500;">invest@mmre.vc</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">MMRE</a>
+        <p>Backing the boldest founders building transformative technology companies from seed to scale.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="invest.html">Invest With Us</a></li>
+          <li><a href="mailto:info@mmre.vc">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclosures</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MMRE. All rights reserved.</span>
+      <span>Built with conviction.</span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('invest-form').style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

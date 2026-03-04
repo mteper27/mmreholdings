@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | MMRE Ventures</title>
+  <meta name="description" content="Explore MMRE's portfolio of transformative technology companies.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">MMRE</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="invest.html" class="nav-cta">Invest With Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Our <span class="gradient-text">Portfolio</span></h1>
+    <p>14 active positions across deep tech, consumer brands, space & defense, energy, real estate, and venture funds.</p>
+  </header>
+
+  <!-- Filter + Portfolio -->
+  <section class="section">
+    <div class="filter-tabs" id="filters">
+      <button class="filter-tab active" data-filter="all">All (14)</button>
+      <button class="filter-tab" data-filter="deeptech">Deep Tech & AI</button>
+      <button class="filter-tab" data-filter="consumer">Consumer</button>
+      <button class="filter-tab" data-filter="space">Space & Defense</button>
+      <button class="filter-tab" data-filter="funds">Funds & Real Estate</button>
+    </div>
+
+    <div class="card-grid" id="portfolio-grid">
+
+      <!-- Deep Tech & AI -->
+      <div class="portfolio-card" data-category="deeptech">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#E63946,#c0392b)">F</div>
+        <h3>Figure AI</h3>
+        <span class="portfolio-stage">Series B &middot; $2.5B Valuation &middot; 15.4x MOIC</span>
+        <p>General-purpose humanoid robotics company building autonomous machines for real-world commercial and industrial applications.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Deep Tech</span>
+          <span class="portfolio-tag">Robotics</span>
+          <span class="portfolio-tag">AI</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="deeptech">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#F4A261,#e76f51)">H</div>
+        <h3>Hark AI</h3>
+        <span class="portfolio-stage">Series A &middot; $5.5B Valuation &middot; 1.0x MOIC</span>
+        <p>Advanced artificial intelligence platform delivering enterprise-grade deep tech solutions across multiple industry verticals.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Deep Tech</span>
+          <span class="portfolio-tag">AI</span>
+          <span class="portfolio-tag">Enterprise</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="deeptech">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#FF6B35,#e55d2b)">R</div>
+        <h3>Radiant</h3>
+        <span class="portfolio-stage">Series D &middot; $1.9B Valuation &middot; 1.0x MOIC</span>
+        <p>Portable advanced nuclear microreactor company delivering clean, reliable power for remote and off-grid applications.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Nuclear</span>
+          <span class="portfolio-tag">Deep Tech</span>
+          <span class="portfolio-tag">Energy</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="deeptech">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#1B998B,#159c8c)">S</div>
+        <h3>Scout AI</h3>
+        <span class="portfolio-stage">Series A &middot; $375M Valuation &middot; 1.0x MOIC</span>
+        <p>Defense-focused AI and autonomous robotics platform delivering next-generation capabilities for national security operations.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Defense AI</span>
+          <span class="portfolio-tag">Robotics</span>
+          <span class="portfolio-tag">Autonomy</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="deeptech">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#9B5DE5,#7b4cbf)">R</div>
+        <h3>Radar</h3>
+        <span class="portfolio-stage">Series B &middot; $703M Valuation &middot; 1.0x MOIC</span>
+        <p>Leading RFID and computer vision platform for retail inventory intelligence, powering real-time tracking for major retailers.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Retail Tech</span>
+          <span class="portfolio-tag">RFID</span>
+          <span class="portfolio-tag">Computer Vision</span>
+        </div>
+      </div>
+
+      <!-- Consumer -->
+      <div class="portfolio-card" data-category="consumer">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#457B9D,#2a6f97)">C</div>
+        <h3>Coterie</h3>
+        <span class="portfolio-stage">Mammoth Acquisition &middot; $300M &middot; 4.0x MOIC</span>
+        <p>Premium baby care brand acquired by Mammoth. High-performance diapers and wipes disrupting the legacy consumer care category.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Consumer</span>
+          <span class="portfolio-tag">Baby Care</span>
+          <span class="portfolio-tag">DTC</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="consumer">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#2A9D8F,#21867a)">J</div>
+        <h3>Jeeter</h3>
+        <span class="portfolio-stage">DreamFields &middot; $425M Valuation &middot; 1.3x MOIC</span>
+        <p>Leading premium cannabis brand under DreamFields. Dominant market share in pre-rolls and infused products across legal markets.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Cannabis</span>
+          <span class="portfolio-tag">Consumer</span>
+          <span class="portfolio-tag">Brand</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="consumer">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#FFD166,#f0c040)">S</div>
+        <h3>Starface</h3>
+        <span class="portfolio-stage">Ast&#333; PE &middot; $265M Valuation &middot; 2.0x MOIC</span>
+        <p>Gen-Z skincare and beauty brand known for iconic star-shaped pimple patches. Cult following with major retail distribution.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Consumer</span>
+          <span class="portfolio-tag">Beauty</span>
+          <span class="portfolio-tag">DTC</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="consumer">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#EF476F,#d63d5e)">I</div>
+        <h3>Insomnia Cookies</h3>
+        <span class="portfolio-stage">$350M Valuation &middot; 2.0x MOIC</span>
+        <p>Late-night cookie delivery brand with 250+ locations nationwide. Cult favorite among college students and late-night snackers.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Consumer</span>
+          <span class="portfolio-tag">F&B</span>
+          <span class="portfolio-tag">Retail</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="consumer">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#06D6A0,#00b894)">O</div>
+        <h3>Olipop</h3>
+        <span class="portfolio-stage">$875M Valuation &middot; 2.1x MOIC</span>
+        <p>Functional prebiotic soda brand disrupting the $45B soft drink industry with healthier, gut-friendly alternatives.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Consumer</span>
+          <span class="portfolio-tag">Beverage</span>
+          <span class="portfolio-tag">Wellness</span>
+        </div>
+      </div>
+
+      <!-- Space & Defense -->
+      <div class="portfolio-card" data-category="space">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#6C5CE7,#5a4bd1)">L</div>
+        <h3>Loft Orbital</h3>
+        <span class="portfolio-stage">Series B &middot; $550M Valuation &middot; 1.8x MOIC</span>
+        <p>Space infrastructure company enabling rapid satellite deployment. Offers turnkey satellite-as-a-service for commercial and government customers.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Space</span>
+          <span class="portfolio-tag">Defense</span>
+          <span class="portfolio-tag">Infrastructure</span>
+        </div>
+      </div>
+
+      <!-- Funds & Real Estate -->
+      <div class="portfolio-card" data-category="funds">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#264653,#1d3540)">S</div>
+        <h3>Stoneweg</h3>
+        <span class="portfolio-stage">US Fund &middot; Real Estate &middot; 2.0x MOIC</span>
+        <p>Institutional real estate investment fund focused on high-quality US property assets delivering stable, diversified returns.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Real Estate</span>
+          <span class="portfolio-tag">Fund</span>
+          <span class="portfolio-tag">US Market</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="funds">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#00B4D8,#0096b7)">A</div>
+        <h3>Align Fund</h3>
+        <span class="portfolio-stage">Fund I &amp; II &middot; Venture Capital &middot; 2.0x MOIC</span>
+        <p>Strategic LP position in a top-tier venture capital fund providing diversified access to high-growth technology companies.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Venture Capital</span>
+          <span class="portfolio-tag">Fund</span>
+          <span class="portfolio-tag">LP</span>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-category="funds">
+        <div class="portfolio-logo" style="background:linear-gradient(135deg,#0077B6,#005f92)">T</div>
+        <h3>TGV Fund</h3>
+        <span class="portfolio-stage">Venture Capital &middot; 2.0x MOIC</span>
+        <p>LP commitment in a premier venture fund with exposure to breakout technology companies across the global startup ecosystem.</p>
+        <div class="portfolio-tags">
+          <span class="portfolio-tag">Venture Capital</span>
+          <span class="portfolio-tag">Fund</span>
+          <span class="portfolio-tag">LP</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="divider"></div>
+  <div class="stats fade-in">
+    <div class="stat">
+      <div class="stat-value">$2.1M</div>
+      <div class="stat-label">Total Deployed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">$5.6M</div>
+      <div class="stat-label">Current Value</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">2.7x</div>
+      <div class="stat-label">Blended MOIC</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">15.4x</div>
+      <div class="stat-label">Top Performer</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-content fade-in">
+      <h2>Building Something <span class="gradient-text">Extraordinary?</span></h2>
+      <p>We're always looking for the next generation of exceptional founders. Reach out and let's talk.</p>
+      <a href="invest.html" class="btn btn-primary">Get In Touch &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">MMRE</a>
+        <p>Backing the boldest founders building transformative technology companies from seed to scale.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="invest.html">Invest With Us</a></li>
+          <li><a href="mailto:info@mmre.vc">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter / X</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Disclosures</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MMRE. All rights reserved.</span>
+      <span>Built with conviction.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Fade in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Portfolio filter
+    document.getElementById('filters').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-tab')) return;
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      e.target.classList.add('active');
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll('.portfolio-card').forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          requestAnimationFrame(() => {
+            card.style.transition = 'all 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          });
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
